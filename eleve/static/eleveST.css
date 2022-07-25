@@ -1,0 +1,29 @@
+h1{
+    color:brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ab{
+    border-collapse: separate;
+    border: 1px solid #000;
+    margin-left: 200px;
+    
+    
+}
+.td {
+    border: 1px solid #000;
+    padding: 30px;
+  }
+
+.col{
+    background-color: cadetblue;
+}
+.cont{
+    display: flex;
+}
+.ajout{
+    height: 300px;
+    width: 500px;
+    background-color: coral;
+    margin-top: 30px;
+}
+

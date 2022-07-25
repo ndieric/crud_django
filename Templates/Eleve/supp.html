@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+    {% block contenu  %}
+       <h1>Voulez-vous supprimer cet eleve?</h1>
+       <form action="{% url 'supprimer' form.id %} method="POST">
+        {% csrf_token %}
+        <a class="btn btn-warning" href="{% url 'acceuil' %}">Annuler</a>
+
+        <input class="btn btn-danger" type="submit" value="Confirmer">
+
+       {% endblock  %}

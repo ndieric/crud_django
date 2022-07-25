@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+
+{% block contenu  %}
+
+<div class="cont">
+    <table class="ab">
+        <tr >
+            <th class="td">Id</th>
+            <th class="td">Nom</th>
+            <th class="td">Prenom</th>
+            <th class="td">Genre</th>
+            <th class="td">Date de Naissance</th>
+        </tr>
+        {% for eleve in eleves%}
+        <tr class="col">
+            <th>{{eleve.id}}</th>
+            <th>{{eleve.nom}}</th>
+            <th>{{eleve.prenom}}</th>
+            <th>{{eleve.genre}}</th>
+            <th>{{eleve.date_naissance}}</th>
+            <th><a class="btn btn-success" href="{% url 'ajout' %}">Ajouter</th>
+                <th><a class="btn btn-info" href="{% url 'modif' eleve.id %}">Modifer</th>
+                    <th><a class="btn btn-danger" href="{% url 'supprimer' eleve.id %}">Supprimer</th>
+            
+
+            {% endfor %}
+            
+        </tr>
+
+    </table>
+    <div >
+        <input class="btn btn-success"  type="submit" value="Ajouter">
+    </div>
+</div>
+
+{% endblock  %}

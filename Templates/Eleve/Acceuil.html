@@ -21,6 +21,10 @@
             <th><a class="btn btn-success" href="{% url 'ajout' %}">Ajouter</th>
                 <th><a class="btn btn-info" href="{% url 'modif' eleve.id %}">Modifer</th>
                     <th><a class="btn btn-danger" href="{% url 'supprimer' eleve.id %}">Supprimer</th>
+                        <th><a class="btn btn-primary" href="{% url 'search'  %}">Search</th>
+
+
+                        
             
 
             {% endfor %}

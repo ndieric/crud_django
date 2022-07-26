@@ -1,0 +1,7 @@
+{% include 'base/navbar.html' %}
+    {% block contenu  %}
+    <form method='GET'>
+       <input type="submit" value="Search">
+       {{myfilter.form}}
+    </form>
+       {% endblock  %}
